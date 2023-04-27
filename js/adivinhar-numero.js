@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/site-adivinhar-numero.css">
-    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Chewy&family=DynaPuff&family=Lilita+One&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/icone.png">
-	
-	<title class="texto">Adivinhe o número que estou pensando:</title>
-
-</head>
-<body>
-	
-	<h1 class="texto1">Adivinhe o número que estou pensando:</h1>
-	<p class="texto2">Escolha um número de 0 a 10:</p>
-	<input type="number" id="guess">
-	<button onclick="checkGuess()">Adivinhar</button>
-	<p id="result"></p>
-
-	<script>
-		var numTries = 3;
+var numTries = 3;
 		var answer = Math.floor(Math.random() * 11);
 
 		function checkGuess() {
@@ -47,6 +24,3 @@
 			}
 			document.getElementById("guess").value = "";
 		}
-	</script>
-</body>
-</html>
